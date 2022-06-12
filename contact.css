@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Poppins-Medium;
+    background-color: transparent;
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url(Poppins-Light.ttf);
+}
+
+.contactbg{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #FFDCC7;
+}
+nav{
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 180px;
+    margin-left: 2%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 480;
+}
+.donate_btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 35px;
+    color: black;
+    background-image: linear-gradient(to right, #FFBD59,#FDA067);
+    border-radius: 30px;
+    margin-right:35px;
+    font-size: 20px;
+    font-weight: 450;
+}
+.content{
+    margin-top: 1%;
+    position: relative;
+    color: #323131;
+    background-color: transparent;
+    
+}
+.content h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: Poppins-Medium;
+    background-color: transparent;
+}
+.socialmedia{
+    display: inline-block;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 10px 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 0%;
+    align-content: center;
+    
+}
+.iglogo{
+    width: 200px;
+    position: relative;
+    z-index: 2;
+}
+.sclogo{
+    width: 200px;
+    position: relative;
+    z-index: 2;
+}
+.mlogo{
+    width: 200px;
+    position: relative;
+    z-index: 2;
+}
+.walogo{
+    width: 200px;
+    position: relative;
+    z-index: 2;
+}
+section {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+.container{
+    width: 40%;
+    height: auto;
+    background-color: transparent;
+    margin-top: -2%;
+    border: none;
+    align-items: center;
+    z-index: 2;
+}
+.form-group{
+    width: 100%;
+    margin-top: 3%;
+    font-size: 18px;
+    z-index: 2;
+    background-color: transparent;
+    opacity: 0.9;
+}
+.form-group input, .form-group textarea{
+    width: 100%;
+    font-family: Poppins-Light;
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+    margin-top: 2px;
+    background-color: white;
+    align-items: center;
+    z-index: 2;
+}
+.emaillabel{
+    background-color: transparent;
+}
+textarea{
+    resize: vertical;
+}
+button[type="submit"]{
+    font-family: Poppins-Medium;
+    width: 100%;
+    padding: 2px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 8px;
+    transition: 0.3s ease color;
+    align-items: center;
+    border: none;
+    z-index: 2;
+    background-color: transparent;
+}
+button[type="submit"]:hover {
+    color:#6b6b6b;
+  }
+
+#status{
+    width: 40%;
+    text-align: center;
+    padding: 5px;
+    margin-top: 1%;
+}
+#status.success{
+    background-color: lightgreen;
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: lightcoral;
+    animation: status 4s ease forwards;
+}
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+.leftgp{
+    width: 950px;
+    position: absolute;
+    background-color: transparent;
+    margin-left: 8.2%;
+    z-index: 1;
+}
+.rightgp{
+    width: 950px;
+    position: absolute;
+    background-color: transparent;
+    margin-left: 24.6%;
+    z-index: 1;
+}
+.contacttop{
+    width: 500px;
+    margin-top: 0%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 0;
+    opacity: 0.8;
+}
+.contactbottom{
+    width: 800px;
+    margin-top: 10%;
+    margin-left: 50%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 0;
+    opacity: 0.8;
+}
+.pointinghand{
+    width: 400px;
+    position: absolute;
+    z-index: 3;
+    margin-left: -1%;
+    margin-top: 10%;
+}
+.anim{
+    opacity:0;
+    transform: translateX(-60px);
+    animation: moveright 0.8s linear forwards;
+}
+@keyframes moveright{
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

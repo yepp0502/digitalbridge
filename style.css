@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Poppins-Medium;
+    background-color: #FFDCC7;
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url(Poppins-Light.ttf);
+}
+
+.homebg{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 180px;
+    margin-left: 2%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 480;
+}
+.donate_btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 35px;
+    color: black;
+    background-image: linear-gradient(to right, #FFBD59,#FDA067);
+    border-radius: 30px;
+    margin-right:35px;
+    font-size: 20px;
+    font-weight: 450;
+}
+.circle1_img{
+    width: 200px;
+    margin-left:2%;
+    position: absolute;
+    opacity: 0.65;
+}
+.circle2_img{
+    width: 400px;
+    margin-left:30%;
+    margin-top: 22%;
+    position: absolute;
+    opacity: 0.6;
+}
+.content{
+    margin-top: 4%;
+    max-width: 900px;
+    margin-left: 10%;
+    z-index: 1;
+    position: relative;
+    color: #323131;
+}
+.content h1{
+    font-size: 65px;
+    font-family: Poppins-Medium;
+    line-height: 80px;
+    z-index: 1;
+    position: absolute;
+    background-color: transparent;
+    
+}
+.content p{
+    font-size: 25px;
+    margin-top: 30%;
+    font-family: Poppins-Light;
+    line-height: 30px;
+    position: absolute;
+    background-color: transparent;
+}
+
+.join_class{
+    margin-top: 30%;
+    margin-left: 9%;
+    position: absolute;
+    animation-delay: 1.5s;
+}
+.join_btn{
+    color: #323131;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 12px 35px;
+    color: black;
+    background-image: linear-gradient(to right, #FFBD59,#FDA067);
+    border-radius: 30px;
+}
+.computer-img{
+    width:600px;
+    position: absolute;
+    right:1%;
+    top: 18%;
+    animation-delay: 5s;
+}
+.anim{
+    opacity:0;
+    transform: translateY(-30px);
+    animation: movedown 0.8s linear forwards;
+}
+@keyframes movedown{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

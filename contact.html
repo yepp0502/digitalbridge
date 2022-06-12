@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>digitalbridge</title>
+</head>
+<body>
+    <div class="contactbg">
+        <nav>
+            <img src="images/dblogo.png" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div>
+                <a href="donate.html" class="donate_btn">Donate</a>
+            </div>
+        </nav>
+        <img src="images/glasspaneleft.png" class="leftgp anim">
+        <img src="images/glasspaneright.png" class="rightgp anim">
+        <img src="images/contactbg(1).png" class="contacttop">
+        <img src="images/contactbg(2).png" class="contactbottom">
+        <img src="images/orangepointing.png" class="pointinghand">
+        <div class="content">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="socialmedia">
+            <a href="https://www.instagram.com/parkyoungeon/">
+                <img src="images/instagram.png" class="iglogo" alt="Instagram">
+            </a>
+            <img src="images/snapchat.png" class="sclogo">
+            <img src="images/messenger.png" class="mlogo">
+            <img src="images/whatsapp.png" class="walogo">
+        </div>
+        <section>
+            <div class="container">
+                <form action = "https://formspree.io/f/xgedqljo" method="POST" id="my-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" cols="20" rows="5" placeholder="hello"></textarea>
+                    </div>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+            <div id="status"></div>
+        </section>
+        <script src="./contact.js"></script>
+    </div>
+</body>
+</html>
